@@ -20,7 +20,8 @@
         "{{user `autounattend`}}",
         "./scripts/microsoft-updates.bat",
         "./scripts/win-updates.ps1",
-        "./scripts/openssh.ps1"
+        "./scripts/openssh.ps1",
+        "./tools/devcon.exe"
       ],
       "vmx_data": {
         "RemoteDisplay.vnc.enabled": "false",
@@ -48,7 +49,8 @@
         "./scripts/microsoft-updates.bat",
         "./scripts/win-updates.ps1",
         "./scripts/openssh.ps1",
-        "./scripts/oracle-cert.cer"
+        "./scripts/oracle-cert.cer",
+        "./tools/devcon.exe"
       ],
       "vboxmanage": [
         [
@@ -73,6 +75,7 @@
       "execute_command": "{{.Vars}} cmd /c C:/Windows/Temp/script.bat",
       "scripts": [
         "./scripts/vm-guest-tools.bat",
+        "./scripts/vm-guest-tools-hyperv.bat",
         "./scripts/vagrant-ssh.bat",
         "./scripts/disable-auto-logon.bat",
         "./scripts/enable-rdp.bat",
