@@ -89,6 +89,12 @@
       "keep_input_artifact": false,
       "output": "windows_2008_r2_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_2008_r2.template"
+    },
+    {
+      "type": "virtualbox-to-hyperv",
+      "only": ["virtualbox-iso"],
+      "output": "windows_2008_r2_hyperv.box",
+      "vagrantfile_template": "vagrantfile-windows_2008_r2.template"
     }
   ],
   "variables": {
